@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <div class="resume-container">
+      <div class="controls">
+        <button id="print-button" class="print-button">
+          <i class='bx bx-printer'></i>
+          Print / Save as PDF
+        </button>
+      </div>
+
+      <div class="resume">
+        <!-- Header / Contact Info with Profile Image -->
+        <header class="resume-header">
+          <div class="profile-image">
+            <img src="https://via.placeholder.com/160" alt="Profile">
+          </div>
+          <div class="header-content">
+            <h1 class="name">John Doe</h1>
+            <p class="title">Front-End Developer</p>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class='bx bx-envelope'></i>
+                <span>email@example.com</span>
+              </div>
+              <div class="contact-item">
+                <i class='bx bx-phone'></i>
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div class="contact-item">
+                <i class='bx bxl-linkedin'></i>
+                <span>linkedin.com/in/johndoe</span>
+              </div>
+              <div class="contact-item">
+                <i class='bx bxl-github'></i>
+                <span>github.com/johndoe</span>
+              </div>
+              <div class="contact-item">
+                <i class='bx bx-map'></i>
+                <span>New York, NY</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="resume-section summary-section">
+          <h2 class="section-title">
+            <i class='bx bx-award'></i>
+            Professional Summary
+          </h2>
+          <p class="summary-text">
+            Front-end developer with expertise in HTML, CSS, JavaScript, and modern frameworks. Experienced in building
+            responsive, user-friendly web applications with a focus on performance and accessibility. Proven track
+            record of delivering high-quality projects on time and collaborating effectively with cross-functional
+            teams.
+          </p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="resume-section">
+          <h2 class="section-title">
+            <i class='bx bx-award'></i>
+            Technical Skills
+          </h2>
+          <div class="skills-container">
+            <div class="skills-group">
+              <h3 class="skills-title">Frontend Development</h3>
+              <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">TailwindCSS</span>
+              </div>
+            </div>
+            <div class="skills-group">
+              <h3 class="skills-title">Tools & Methodologies</h3>
+              <div class="skills-list">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">RESTful APIs</span>
+                <span class="skill-tag">Agile/Scrum</span>
+                <span class="skill-tag">UI/UX</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="resume-section">
+          <h2 class="section-title">
+            <i class='bx bx-briefcase'></i>
+            Work Experience
+          </h2>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <h3 class="job-title">Front-End Developer</h3>
+              <span class="job-date">
+                <i class='bx bx-calendar'></i>
+                Jan 2021 - Present
+              </span>
+            </div>
+            <p class="company-name">Tech Solutions Inc.</p>
+            <ul class="job-duties">
+              <li>Developed and maintained multiple web applications using modern JavaScript frameworks</li>
+              <li>Implemented responsive designs, ensuring cross-browser compatibility</li>
+              <li>Collaborated with backend developers to integrate RESTful APIs</li>
+              <li>Improved application performance by 30% through code optimization</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <h3 class="job-title">Junior Web Developer</h3>
+              <span class="job-date">
+                <i class='bx bx-calendar'></i>
+                Jun 2019 - Dec 2020
+              </span>
+            </div>
+            <p class="company-name">Digital Creations Co.</p>
+            <ul class="job-duties">
+              <li>Assisted in developing web interfaces using HTML, CSS, and JavaScript</li>
+              <li>Participated in code reviews and implemented feedback from senior developers</li>
+              <li>Contributed to the development of responsive web designs</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="resume-section projects-section">
+          <h2 class="section-title">
+            <i class='bx bx-book'></i>
+            Projects
+          </h2>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3 class="project-title">HRM Application</h3>
+              <p class="project-description">
+                Developed a comprehensive Human Resource Management system with RESTful API integration.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">API</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">Order Management System</h3>
+              <p class="project-description">
+                Built a responsive order tracking and management platform with real-time updates using WebSockets.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">WebSockets</span>
+                <span class="project-tag">Real-time</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">Blood Group Store</h3>
+              <p class="project-description">
+                Created a blood donation management application with user authentication and database integration.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Authentication</span>
+                <span class="project-tag">Database</span>
+                <span class="project-tag">React.js</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">Course Management</h3>
+              <p class="project-description">
+                Designed and implemented a learning management system with content delivery and progress tracking features.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">State Management</span>
+                <span class="project-tag">UI/UX</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">Government Storage</h3>
+              <p class="project-description">
+                Developed a secure document storage and retrieval system with role-based access control.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Security</span>
+                <span class="project-tag">Authentication</span>
+                <span class="project-tag">Storage</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">Attendance Management</h3>
+              <p class="project-description">
+                Built an automated attendance tracking system with reporting and analytics features.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Analytics</span>
+                <span class="project-tag">Reporting</span>
+                <span class="project-tag">Dashboard</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="resume-section">
+          <h2 class="section-title">
+            <i class='bx bx-book'></i>
+            Education
+          </h2>
+          <div class="education-container">
+            <div class="education-details">
+              <h3 class="degree">BSc in Computer Science and Engineering</h3>
+              <p class="institution">University Name</p>
+              <p class="coursework">
+                Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems
+              </p>
+            </div>
+            <span class="education-date">
+              <i class='bx bx-calendar'></i>
+              2015 - 2019
+            </span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
